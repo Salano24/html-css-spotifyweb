@@ -1,0 +1,55 @@
+/* #region ASSETS */
+*{
+    padding: 0;
+    margin: 0;
+    background-origin: padding-box;
+}
+
+
+
+/* #endregion ASSETS */
+
+/* #region DEBUG */
+
+p{
+    font-size: 5rem;
+    color: white;
+}
+/* #endregion DEBUG */
+
+/* #region HEADER */
+.upgrade {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right:5px ;
+    width: calc(100vw - 215px);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 85px;
+    position: fixed;
+    right: 0;
+}
+
+/* #endregion HEADER */
+
+.main_menu{
+    height:calc(100vh - 85px);
+    width:215px ;
+    background-color: black;
+    position: fixed;
+}
+
+.jumbo{
+    margin-left: 215px ;
+   background-color: rgba(20, 25, 34, 1);
+}
+
+.player{
+    width: 100vw;
+    background-color: #282828;
+    height:85px ;
+    position: fixed;
+    bottom: 0;
+}
+
+
