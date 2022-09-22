@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify Web</title>
@@ -14,20 +19,173 @@
         </div>
     </header>
 
-
     <main>
         <div class="main_menu">
+         <div id="navigazione">
+           <img class="logo" src="./img/logo.svg" alt=""> <br>
+           <span class="home"> <img src="./img/home.svg" alt=""> Home</span>
+           <span class="cerca">
+            <img src="./img/search.svg" alt=""> Cerca
+           </span>
+          
+           <span class="libreria">
+            <img src="./img/libreria.svg" alt=""> La tua libreria
+           </span>
+          </div>
+
+          <div id="playlist">
+           <div class="playlist">PLAYLIST</div> <br>
+          
+           <div class="crea_playlist">
+              <span class="aggiungi">+</span><span class="crea">Crea Playlist</span>
+          </div>
+
+          <div class="nome_playlist">
+            <span>Nome Playlist</span><br>
+            <span>Nome Playlist</span><br>
+            <span>Nome Playlist</span><br>
+            <span>Nome Playlist</span><br>
+            <span>Nome Playlist</span><br>
+            <span>Nome Playlist</span><br>
+            <span>Nome Playlist</span>
+
+          </div>
+
+         </div>
+
+         <div id="installa">
+            <p> <i class="fa-solid fa-arrow-down arrow"></i> Installa app</p>
+            <hr>
+            <span class="name"><i class="fa-solid fa-user"></i> Jhon Doe</span>
+
+         </div>
 
         </div>
+      
         <div class="jumbo">
-           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis impedit nihil saepe, maxime assumenda! Autem aperiam ipsa reprehenderit deleniti voluptatem nulla maiores quos quis cupiditate iure, placeat unde cumque fugiat perferendis repellat exercitationem nostrum, molestias, officiis minus tempore illo? Quod, nobis nam veniam in fugit eligendi consectetur nisi sint. Deserunt beatae consequuntur dolore eos sint reiciendis, iste at. Odit eum aut aspernatur numquam maiores at quidem animi atque fuga commodi, libero similique voluptatem earum corporis? Tempora laboriosam, provident a deleniti, deserunt at commodi fuga ex voluptatibus veritatis vero ducimus id minima dolore harum totam quae sed! Nulla, laboriosam molestiae. </p>
+           <div class="sezioni container">
+                <span>IN E<span class="evidenziato">VIDE</span>NZA</span>
+                <span>PODCAST</span>
+                <span>CLASSIFICHE</span>
+                <span>GENERI E MOOD</span>
+                <span>NUOVE USCITE</span>
+                <span>SCOPRI</span>
+           </div>
+
+           
+           <div class="music">
+             <div class="container_album">
+              <h2 class="played">Recentely played</h2>
+                <div class="row">
+                  <div class="album">
+                    <img src="./img/metal_lifting.jpg" alt="">
+                    <h4>Heavy Metal</h4>
+                    <h6>Subtitle</h6>
+                  </div>
+                    <div class="album">
+                      <img src="./img/stranger.jpeg" alt="">
+                      <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                      <h6>Kyle Dixon & Micheal Stein</h6>
+                    </div>
+                    <div class="album">
+                      <img src="./img/aquietplace.jpeg" alt="">
+                      <h4>A quiet place</h4>
+                      <h6>Subtitle</h6>
+                    </div>
+                    <div class="album">
+                      <img src="./img/split.jpeg" alt="">
+                      <h4>Split</h4>
+                      <h6>Subtitle</h6>
+                    </div>
+                    <div class="album">
+                      <img src="./img/cure.jpeg" alt="">
+                      <h4>A cure for wellness</h4>
+                      <h6>Subtitle</h6>
+                    </div>
+                    <div class="album">
+                      <img src="./img/sinister.jpeg" alt="">
+                      <h4>Sinister</h4>
+                      <h6>Subtitle</h6>
+                    </div>             
+                  </div>
+
+                  <h2 class="personal_playlist">Creato per John Doe</h2>
+                  <h6 class="consiglio">Più ascolti, più accurati saranno i suggerimenti.</h6>
+                
+                  <div class="row">
+                    <div class="album">
+                      <img src="./img/radar.jpeg" alt="">
+                      <h4>Relase Radar</h4>      
+                    </div>
+
+                    <div class="album">
+                      <img src="./img/mixdaily.jpeg" alt="">
+                      <h4>Daily Mix 1</h4>               
+                    </div>
+                </div>
+
+                <h2 class="personal_playlist">Artisti più popolari</h2>
+                <h6 class="consiglio">Più ascolti, più accurati saranno i suggerimenti.</h6>
+              
+
+                <div class="row">
+                    <div class="album">
+                      <img class="circle_photo" src="./img/youg.jpeg" alt="">
+                      <h4>Lana del Rey</h4>
+                    </div>
+                    <div class="album">
+                      <img class="circle_photo" src="./img/einaudi.jpeg" alt="">
+                      <h4>Ludovico Einaudi</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
     
     </main>
+
     <footer>
          <div class="player">
+            <div class="brano">
+                <img src="./img/sinister.jpeg" alt="">
+                <div class="canzone">
+                    <h5>Sinister</h5>
+                    <h6>Brano Nome</h6>
+                </div>
+                <span><i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i></span>
+            </div>
 
+            <div class="riproduzione">
+              <div class="circle"></div>
+                <div class="tasti">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="secondi_totali">
+                    <div class="secondi"></div>
+                </div>
+            </div>
+
+            <div class="volume">
+              <span><i class="fa-solid fa-list"></i>
+            </span>
+              <span>
+                <i class="fa-solid fa-desktop"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-volume-high"></i>
+              </span>
+              <div class="volume_totale">
+                  <div class="volume_attuale">
+                  <div class="circle_volume"></div>
+                </div>
+                  </div>
+            </div>
          </div>
     </footer>
 </body>
