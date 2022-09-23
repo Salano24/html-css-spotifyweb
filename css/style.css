@@ -63,6 +63,10 @@ body{
     display: none;
 }
 
+.main_menu span:hover{
+    color: white;
+}
+
 /* #region NAVIGAZIONE */
 .home img{
     height: 1.3rem;
@@ -215,6 +219,10 @@ body{
     justify-content: space-between;
 }
 
+.sezioni span:hover{
+    color: white;
+}
+
 
 
 .container{
@@ -247,6 +255,10 @@ body{
 
 .debug .album {
     background-color: red;
+}
+
+.album h6:hover{
+    text-decoration: underline;
 }
 
 .container_album {
@@ -330,6 +342,10 @@ body{
 .brano i{
     color: #a3a3a3;
     padding-right: 0.5rem;
+}
+
+.canzone h6:hover{
+    text-decoration: underline;
 }
 /* #endregion BRANO */
 
