@@ -13,14 +13,12 @@ body{
 /* #endregion ASSETS */
 
 /* #region DEBUG */
-
+/* 
 .jumbo p{
     font-size: 5rem;
     color: #ffffff;
     opacity: 0;
-}
-
-
+} */
 
 /* #endregion DEBUG */
 
@@ -59,6 +57,10 @@ body{
     color: white;
     font-size: 1rem;
     overflow: hidden;
+}
+
+.xs_display{
+    display: none;
 }
 
 /* #region NAVIGAZIONE */
@@ -393,13 +395,12 @@ body{
        background-color:#a3a3a3 ;
        width: 20%;
        height: 100%;
-       opacity: 0;
+       
     }
 
 
 
     .riproduzione:hover .secondi{
-        opacity: 1;
         background-color: #1db954;
     }
 
@@ -418,7 +419,7 @@ body{
     justify-content: end;
     align-items: center;
     width: 30%;
-    padding-right: 2rem;
+    padding-right: 3rem;
     position: relative;
 }
 
@@ -439,12 +440,11 @@ body{
     background-color: #a3a3a3;
     height: 100%;
     width: 30%;
-    opacity: 0;
     position: relative;
 }
 
 .volume:hover .volume_attuale{
-    opacity: 1;
+
     background-color:  #1db954;
    }
    
@@ -474,6 +474,192 @@ body{
 
 /* #region RESPONSIVE */
 
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+    font-size: 0.6rem;
+    }
 
+    .album{
+        width: calc(100% / 4 - 1rem);
+    }
 
+    .riproduzione{
+        width: 30%;
+
+    }
+
+    .riproduzione::after{
+        right: -18%;
+    }
+
+    .riproduzione::before{
+        left: -18%;
+    }
+
+    .brano i{
+      padding-left: 0.5rem;
+      padding-right: 0;
+    }
+    .brano img{
+        padding-right: 0.5rem;
+    }
+
+    .canzone{
+        padding-right: 0;
+    }
+
+    .main_menu span{
+        font-size: 0.8rem;
+    }
+
+    .nome_playlist{
+        line-height: 1rem;
+    }
+
+    .aggiungi{
+        padding: 0.2rem 0.5rem;
+    }
+
+    #installa{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .album{
+        width: calc(100% / 2 - 1rem);
+    }
+
+    .riproduzione {
+        width: 25%;
+    }
+
+    .riproduzione i {
+       padding-left: 0.5rem;
+    }
+
+    .riproduzione::before{
+        bottom: 1em;
+        font-size: 0.6rem;
+        left: -22%;
+    }
+
+    .riproduzione::after{
+        bottom: 1em;
+        font-size: 0.6rem;
+        right: -22%;
+    }
+
+    .volume i{
+        padding-left: 0.5rem;
+    }
+
+    .nome_playlist{
+        margin-top: 0.5rem;
+    }
+
+    #installa {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .upgrade button{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    .main_menu span, .main_menu hr, .main_menu .playlist, .main_menu p, .navigazione img, .logo{
+        display: none;
+    }
+
+    .main_menu{
+        width: 50px;
+    }
+
+    .upgrade{
+        width: calc(100vw - 50px);
+        height: 60px;
+    }
+
+    .jumbo{
+        padding-left: 50px;
+        margin-left: 0;
+    }
+
+    .riproduzione i {
+        padding-left: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .riproduzione {
+        width: 20%;
+    }
+
+    .brano i {
+        padding-left: 0.2rem;
+        font-size: 0.6rem;
+    }
+
+    .brano img{
+        height:2rem ;
+    }
+
+    .brano h5, .brano h6{
+        font-size: 0.6rem;
+    
+    }
+    
+    .canzone{
+        width: 25%;
+    }
+
+    .volume i{
+      font-size: 0.6rem;
+    }
+
+    .volume{
+        padding-right: 2rem;
+    }
+
+    .riproduzione::before{
+        left: -30%;
+    }
+
+    .riproduzione::after{
+        right: -30%;
+    }
+
+    .xs_display{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 85px);
+        text-align: center;
+    }
+
+    .logo_sm{
+        filter: invert();
+        padding: 1rem 0;
+    }
+
+    .xs_display img{
+        height: 1.5rem;
+    }
+
+    .icone_download .arrow{
+       font-size: 0.5rem;
+       margin-left: 1rem;
+    }
+
+    .icone_download .user{
+      margin: 1rem 1rem 0.5rem 1rem;
+      
+    }
+
+            
+}
 /* #endregion RESPONSIVE */
